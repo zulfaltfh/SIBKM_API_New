@@ -12,9 +12,192 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ViewData["title"] - Client</title>
+    <style>
+
+        .title{
+            text-decoration: underline;
+        }
+
+        p{
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            color: white;
+        }
+
+        .absolute #two {
+            position: absolute;
+            top: 340px;
+            left: 40px;
+            background: red
+        }
+
+        .css-position span {
+            color: brown;
+        }
+
+        .relative #two {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: red;
+        }
+
+        
+
+        .fixed #two {
+            position: absolute;
+            bottom: 100px;
+            right: 50%;
+            background: red;
+        }
+
+        .css-selector {
+            margin-top: 100px;
+        }
+
+        .atrribute-selector a[href="#internal"] {
+            background-color: gold;
+        }
+
+        .atrribute-selector a[href*="example"] {
+            background-color: silver;
+        }
+
+        /*
+            class selector biasanya menggunakan simbol (.) untuk men-select suatu class tertentu di CSS.
+            pada contoh dibawah ini, saya men-select class 'class-selector' dan class 'higlight' yang ada didalamnya,kemudian mencoba merubah warna bg menjadi kuning
+        */
+        .class-selector .highlight {
+            background-color: yellow;
+        }
+
+        .css-selector .content{
+            padding: 4px;
+            border: 1px solid green;
+        }
+
+        #text{
+            padding: 4px;
+            border: 1px solid green;
+            color:darkred;
+        }
+
+        .pseudoclass-element pre{
+            font-size:20px;
+        }
+
+        /*Pseudo-element, ::first-letter digunakan untuk menyeleksi atau memilih huruf pertama pada suatu paragraf/text*/
+        pre::first-letter{
+            font-size: 30px;
+            font-weight: bold;
+            color:darkblue;
+        }
+
+        pre a{
+            color: black;
+        }
+
+        /*Pseudo-class, :hover digunakan untuk mengedit suatu element yaitu link yang ketika mouse diarahkan ke tulisan terkait akan berubah warna*/
+        pre a:hover{
+            color:purple;
+        }
+
+        /*Pseudo-class, :active digunakan untuk mengedit suatu element yaitu link yang ketika klik link terkait akan berubah warna*/
+        pre a:active{
+            color:rebeccapurple;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Test Cors</h1>
+    <div class="css-position">
+        <h2 class="title">CSS Position</h2>
+        <div class="relative">
+            <h4 class="sub-title">-- Position : Relative</h4>
+            <p><span>Value : Relative</span> dapat membuat suatu element dapat dipindah-pindahkan posisinya tanpa merubah posisi element lainnya</p>
+            <div class="box" id="one">One</div>
+            <div class="box" id="two">Two</div>
+            <div class="box" id="three">Three</div>
+        </div>
+
+        <div class="absolute">
+            <h4 class="sub-title">-- Position : Absolute</h4>
+            <p>
+                <span>Value : Absolute</span> dapat membuat suatu element dipindah-pindahkan, namun dapat mempengaruhi posisi element lainnya. 
+                Seperti pada contoh, element yang ada di sebelah kanan menjadi mendekat ke kiri</p>
+            <div class="box" id="one">One</div>
+            <div class="box" id="two">Two</div>
+            <div class="box" id="three">Three</div>
+        </div>
+
+        <div class="fixed">
+            <h4 class="sub-title">-- Position : Fixed</h4>
+            <div class="box" id="one">One</div>
+            <div class="box" id="two">Two (Position: Fixed)</div>
+            <div class="box" id="three">Three</div>
+        </div>
+    </div>
+
+    <div class="css-selector">
+        <h2 class="title">CSS Selector</h2>
+
+        <div class="atrribute-selector">
+            <h4 class="sub-title">-- Atrribute Selector</h4>
+            <ul>
+                <li><a href="#internal">Internal link</a></li>
+                <li><a href="http://example.com">Example link</a></li>
+                <li><a href="#InSensitive">Insensitive internal link</a></li>
+                <li><a href="http://example.org">Example org link</a></li>
+                <li><a href="https://example.org">Example https org link</a></li>
+            </ul>
+        </div>
+
+        <div class="class-selector">
+            <h4 class="sub-title">-- Class Selector</h4>
+            <p>Class selector adalah selector yang digunakan ketika ingin memilih element dengan class tertentu untuk dipanggil di CSS. 
+                Class Selector identik dengan penggunaan simbol ( .class )
+            </p>
+            <p class="content">
+                Veggies es bonus vobis, proinde vos postulo essum magis <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
+                melon azuki bean garlic.
+            </p>
+        </div>
+
+        <div class="id-selector">
+            <h4 class="sub-title">-- ID Selector</h4>
+            <p>ID selector adalah selector yang digunakan ketika ingin memilih element dengan class tertentu untuk dipanggil di CSS. 
+                ID Selector identik dengan penggunaan simbol ( #id ).
+            </p>
+            <p id="text">
+                Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                melon azuki bean garlic.
+            </p>
+        </div>
+    </div>
+
+    <div class="pseudoclass-element">
+        <h4 class="sub-title">-- Pseudo Class & Element</h4>
+        <pre>
+        Hi job seekers, ada informasi penting buat kalian yang gak boleh kalian lewatin.
+        pada penasaran nggak informasinya tentang apa?
+
+        Jadi, Rans Entertainment sedang buka lowongan baru untuk kalian, 
+        khususnya buat para fresh graduates. untuk lowongan pekerjaan yang
+        sedang dibuka, bisa kalian check di link <a href="www.linkedin.com/company/rans-media/">www.linkedin.com/company/rans-media/</a>
+        </pre>
+        
+    </div>
+
+    <div class="CSS-Pseudo Element">
+
+    </div>
 
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script>
