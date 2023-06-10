@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_LatihanLayout";
+}
+
+<style>
+    .modal-title{
+        text-transform:capitalize;
+    }
+
+    .photoPoke{
+        display: inline-block;
+        background-color:antiquewhite;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    #photoPokemon{
+        width: 145px;
+        padding: 12px;
+    }
+</style>
+
+<div class="title p-3">
+    <h1>List Pokemon</h1>
+</div>
+<table class="table table-striped table-hover">
+    <thead class="table-primary">
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyPoke"></tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="modalPoke" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="pokemonDetail">Detail Pokemon</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="photoPoke">
+                            <img id="photoPokemon" src="" alt="photoPokemon" />
+                        </div>
+                        <div class="content">
+                            <h6 id="pokeName" class="fw-bold text-uppercase">Nama Pokemon</h6>
+                            <div id="pokeType"></div>
+                        </div>
+                    </div>
+                </div>
+               <div class="row my-2">
+                    <div class="col">
+                        <ul class="list-group list-group-horizontal justify-content-center mb-2">
+                            <li class="list-group-item" id="pokeHeight"></li>
+                            <li class="list-group-item" id="pokeWeight"></li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal justify-content-center">
+                            <li class="list-group-item" style="background-color:lightblue" id="pokeHP"></li>
+                            <li class="list-group-item" style="background-color:lightcoral" id="pokeAttack"></li>
+                            <li class="list-group-item" style="background-color:lightyellow"  id="pokeDefense"></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section latihan{
+    <script src="~/js/latihan.js"></script>
+}

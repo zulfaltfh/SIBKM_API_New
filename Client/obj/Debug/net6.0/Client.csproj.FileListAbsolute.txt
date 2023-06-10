@@ -29,3 +29,4 @@ C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientSe
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client\obj\Debug\net6.0\ref\Client.dll
+C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client\obj\Debug\net6.0\scopedcss\Views\Shared\_LatihanLayout.cshtml.rz.scp.css

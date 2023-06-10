@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1aBqSrcZAg+lMhI3MPrIK7fWkP7ss4SXGPJAVUHgmwE=",
+  "Hash": "FWDkLTsEwAybwd4KHzpSajfwcriVEYth/mdOwsb6M1Y=",
   "Source": "Client",
   "BasePath": "_content/Client",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Zulfa\\Documents\\File Kuliah\\MSIB\\MSIB Metrodata\\Projects\\SIBKM_ClientServer\\Client\\wwwroot\\js\\latihan.js",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zulfa\\Documents\\File Kuliah\\MSIB\\MSIB Metrodata\\Projects\\SIBKM_ClientServer\\Client\\wwwroot\\",
+      "BasePath": "_content/Client",
+      "RelativePath": "js/latihan.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\latihan.js"
     },
     {
       "Identity": "C:\\Users\\Zulfa\\Documents\\File Kuliah\\MSIB\\MSIB Metrodata\\Projects\\SIBKM_ClientServer\\Client\\wwwroot\\js\\site.js",

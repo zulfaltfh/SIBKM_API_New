@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Zulfa\\Documents\\File Kuliah\\MSIB\\MSIB Metrodata\\Projects\\SIBKM_ClientServer\\Client\\wwwroot\\js\\latihan.js",
+      "PackagePath": "staticwebassets\\js\\latihan.js"
+    },
+    {
       "Id": "C:\\Users\\Zulfa\\Documents\\File Kuliah\\MSIB\\MSIB Metrodata\\Projects\\SIBKM_ClientServer\\Client\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
