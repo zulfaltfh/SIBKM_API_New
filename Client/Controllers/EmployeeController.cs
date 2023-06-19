@@ -17,7 +17,7 @@ namespace Client.Controllers
             var Results = await repository.Get();
             var employees = new List<Employee>();
 
-            if(Results != null)
+            if (Results != null)
             {
                 employees = Results.Data.ToList();
             }
@@ -62,18 +62,92 @@ namespace Client.Controllers
          -- details - get by id
          */
         [HttpGet]
-        public async Task<IActionResult> Details(string NIK)
+        public async Task<IActionResult> Details(string id)
         {
             //localhost/university/
-            var Results = await repository.Get(NIK);
-            var employee = new Employee();
+            var Results = await repository.Get(id);
+            var employee = Results.Data;
 
-            if (Results != null)
-            {
-                employee = Results.Data;
-            }
+            //if (Results != null)
+            //{
+            //    employee = Results.Data;
+            //}
 
             return View(employee);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            var Results = await repository.Get(id);
+            var employee = new Employee();
+
+            if (Results.Data?.NIK is null)
+            {
+                return View(employee);
+            }
+            else
+            {
+                employee.NIK = Results.Data.NIK;
+                employee.FirstName = Results.Data.FirstName;
+                employee.LastName = Results.Data.LastName;
+                employee.BirthDate = Results.Data.BirthDate;
+                employee.Gender = Results.Data.Gender;
+                employee.HiringDate = Results.Data.HiringDate;
+                employee.Email = Results.Data.Email;
+                employee.PhoneNumber = Results.Data.PhoneNumber;
+            }
+            return View(employee);
+        }
+
+
+        /*
+         -- edit
+         -- HttpPost 
+         */
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await repository.Put(employee.NIK, employee);
+                if (result.Code == 200)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else if (result.Code == 409)
+                {
+                    ModelState.AddModelError(string.Empty, result.Message);
+                    return View();
+                }
+            }
+
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var result = await repository.Get(id);
+            var university = result?.Data;
+
+            return View(university);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Remove(string id)
+        {
+            var result = await repository.Delete(id);
+            if (result.Code == 200)
+            {
+                TempData["Success"] = "Data berhasil dihapus";
+                return RedirectToAction(nameof(Index));
+            }
+
+            var employee = await repository.Get(id);
+            return View("Delete", employee?.Data);
         }
     }
 }

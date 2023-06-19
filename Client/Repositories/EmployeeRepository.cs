@@ -1,6 +1,7 @@
 ﻿using API.Models;
 using API.ViewModels;
 using Newtonsoft.Json;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Client.Repositories
@@ -34,11 +35,11 @@ namespace Client.Repositories
         }
 
         //Get by Id
-        public async Task<ResponseDataVM<Employee>> Get(string NIK)
+        public async Task<ResponseDataVM<Employee>> Get(string id)
         {
             ResponseDataVM<Employee> entity = null;
 
-            using (var response = await httpClient.GetAsync(request + NIK))
+            using (var response = await httpClient.GetAsync(request + id))
             {
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 entity = JsonConvert.DeserializeObject<ResponseDataVM<Employee>>(apiResponse);
@@ -60,7 +61,7 @@ namespace Client.Repositories
         }
 
         //Put - Edit
-        public async Task<ResponseDataVM<string>> Put(int id, Employee employee)
+        public async Task<ResponseDataVM<string>> Put(string NIK, Employee employee)
         {
             ResponseDataVM<string> entityVM = null;
             StringContent content = new StringContent(JsonConvert.SerializeObject(employee), Encoding.UTF8, "application/json");
@@ -70,6 +71,19 @@ namespace Client.Repositories
                 entityVM = JsonConvert.DeserializeObject<ResponseDataVM<string>>(apiResponse);
             }
             return entityVM;
+        }
+
+        //Delete
+        public async Task<ResponseDataVM<Employee>> Delete(string id)
+        {
+            ResponseDataVM<Employee> entity = null;
+
+            using (var response = await httpClient.DeleteAsync(request + id))
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                entity = JsonConvert.DeserializeObject<ResponseDataVM<Employee>>(apiResponse);
+            }
+            return entity;
         }
     }
 }

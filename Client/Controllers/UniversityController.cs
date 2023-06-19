@@ -103,7 +103,7 @@ namespace Client.Controllers
 
         /*
          -- edit
-         -- HttpPost untuk mengambil id 
+         -- HttpPost 
          */
         [HttpPost]
         [ValidateAntiForgeryToken]
