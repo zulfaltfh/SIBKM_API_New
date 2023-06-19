@@ -87,3 +87,4 @@ C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientSe
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\API\obj\Debug\net6.0\API.pdb
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\API\bin\Debug\net6.0\Newtonsoft.Json.dll

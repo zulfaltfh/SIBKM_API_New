@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +56,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdENvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/University/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/University/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/University/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/University/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/University/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdmVyc2l0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -55,3 +91,7 @@ build_metadata.AdditionalFiles.CssScope = b-53qf98bf1g
 [C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j41ub9gw8f
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-9utaaqplnt

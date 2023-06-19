@@ -67,14 +67,30 @@ function detail(stringUrl) {
         $("#pokeHP").html(`<b>HP : </b>` + res.stats[0].base_stat);
         $("#pokeAttack").html(`<b>Attack : </b>` + res.stats[1].base_stat);
         $("#pokeDefense").html(`<b>Defense : </b>` + res.stats[2].base_stat);
-        //$(".stats").html(`
-        //    <h6 class="fw-bold">
-        //        Stats :
-        //    </h6>
-        //    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="height: 25px">
-        //            <div class="progress-bar" style="width: ${res.stats[0].base_stat}%"> <b>HP : </b> ${res.stats[0].base_stat}</div>
-        //    </div>
-            
-        //`);
     })
 }
+
+//ready function -> fungsi yg dijalankan jika browser selesai ter-Load
+$(document).ready(function () {
+    $('#tablePokemon').DataTable({
+        ajax: {
+            url: "https://pokeapi.co/api/v2/pokemon/&quot",
+            dataSrc: "results" //data source
+        },
+        columns: [
+            {
+                data: "",
+                render: function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            { data: "name" },
+            {
+                data: "",
+                render: function (data, type, row) {
+                    return `<button onclick="detail('${row.url}')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPokemon">Detail</button>`;
+                }
+            }
+        ]
+    });
+});

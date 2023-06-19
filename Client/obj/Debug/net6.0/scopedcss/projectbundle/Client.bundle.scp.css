@@ -63,3 +63,19 @@ button.accept-policy[b-j41ub9gw8f] {
   white-space: nowrap;
   line-height: 60px;
 }
+/* _content/Client/Views/Shared/_LayoutAdmin.cshtml.rz.scp.css */
+.navbar-dark .nav-item .nav-link[b-9utaaqplnt] {
+    color: #fff;
+}
+
+    .navbar-dark .nav-item .nav-link:hover[b-9utaaqplnt] {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+        border-radius: 0.25rem;
+        color: #fff;
+    }
+
+.fa-li[b-9utaaqplnt] {
+    position: relative;
+    left: 0;
+}
