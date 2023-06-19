@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Zulfa\Documents\File Kuliah\MSIB\MSIB Metrodata\Projects\SIBKM_ClientServer\Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Accounts/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Zulfa/Documents/File Kuliah/MSIB/MSIB Metrodata/Projects/SIBKM_ClientServer/Client/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
