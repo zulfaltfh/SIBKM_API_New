@@ -46,5 +46,39 @@ namespace Client.Repositories
             return entityVM;
         }
 
+        public async Task<ResponseDataVM<List<Accounts>>> Get()
+        {
+            ResponseDataVM<List<Accounts>> entityVM = null;
+            using (var response = await httpClient.GetAsync(request))
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                entityVM = JsonConvert.DeserializeObject<ResponseDataVM<List<Accounts>>>(apiResponse);
+            }
+            return entityVM;
+        }
+
+        public async Task<ResponseDataVM<string>> Post(Accounts account)
+        {
+            ResponseDataVM<string> entityVM = null;
+            StringContent content = new StringContent(JsonConvert.SerializeObject(account), Encoding.UTF8, "application/json");
+            using (var response = httpClient.PostAsync(request, content).Result) //localhost/api/university {method:post} -> content
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                entityVM = JsonConvert.DeserializeObject<ResponseDataVM<string>>(apiResponse);
+            }
+            return entityVM;
+        }
+
+        public async Task<ResponseDataVM<Accounts>> Get(int id)
+        {
+            ResponseDataVM<Accounts> entity = null;
+
+            using (var response = await httpClient.GetAsync(request + id))
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                entity = JsonConvert.DeserializeObject<ResponseDataVM<Accounts>>(apiResponse);
+            }
+            return entity;
+        }
     }
 }

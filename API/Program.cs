@@ -35,11 +35,6 @@ builder.Services.AddCors(options => {
         policy.AllowAnyMethod();
         policy.AllowAnyHeader();
     });
-    /*options.AddPolicy("AnotherPolicy", policy => {
-        policy.WithOrigins("https://www.websiteclient.com/");
-        policy.WithMethods("GET", "POST", "PUT");
-        policy.AllowAnyHeader();
-    });*/
 });
 
 // Configure JWT Authentication
